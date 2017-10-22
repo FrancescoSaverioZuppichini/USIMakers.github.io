@@ -1,0 +1,99 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background: linear-gradient(180deg, #e5e5e5, #b0bec5);
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 30px;
+    line-height: 30px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+    font-size: 12px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 200px 15px 0;
+    text-align: center;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+
+.flex-img-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-img {
+    padding-top: 40px;
+}
+
+.flex-img img {
+    width: 300px;
+    height: auto;
+    opacity: 1.0;
+    transition: opacity .6s ease-out;
+}
+
+.flex-img img:hover {
+    opacity: 0.7;
+    transition: opacity .2s ease-out;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+@media (max-width: 900px) {
+    body > .container {
+        padding: 60px 15px 0;
+    }
+}
+
+.aboutUs {
+    text-align: justify;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#logo {
+    animation: flash 4s ease-in-out infinite alternate;
+}
+
+@keyframes flash { 
+  from { opacityfil: 1; }
+  to { opacity: 0.1; }
+}
